@@ -23,21 +23,26 @@ class AppString{
   static const String personalizing = "Personalizing course according to your profile" ;
   static const String currentSchool = "current school" ;
   static const String electiveSubject = "Elective Subject" ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  static const String howDidYouHear = "How Did you Hear about us ?" ;
+  static const String getStarted = "Get Started" ;
+  static const String primary1 = "primary 1" ;
+  static const String primary2 = "Primary 2" ;
+  static const String primary3 = "Primary 3" ;
+  static const String primary4 = "Primary 4" ;
+  static const String primary5 = "Primary 5" ;
+  static const String primary6 = "Primary 6" ;
+  static const String form1 = "Form 1" ;
+  static const String form2 = "Form 2" ;
+  static const String form3 = "Form 3" ;
+  static const String form4 = "Form 4" ;
+  static const String form5 = "Form 5" ;
+  static const String form6 = "Form 6" ;
+  static const String instagram = "Instagram" ;
+  static const String medium = "Medium" ;
+  static const String threads = "Threads" ;
+  static const String friends = "Friends" ;
+  static const String school = "School" ;
+  static const String others = "Others" ;
 
 
 
