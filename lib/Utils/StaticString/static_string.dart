@@ -11,5 +11,34 @@ class AppString{
   static const String newToLearnova = "New to Learnova?" ;
   static const String createAnAccount = "Create an Account" ;
 
+///==============>>>>>>>>>> Sign Up View <<<<<<<<<<<===============///
+
+  static const String createAccount = "Create Account" ;
+  static const String name = "Name" ;
+  static const String johnDoe = "John Doe" ;
+  static const String confirmPassword = "Confirm Password" ;
+
+
+
+  static const String personalizing = "Personalizing course according to your profile" ;
+  static const String currentSchool = "current school" ;
+  static const String electiveSubject = "Elective Subject" ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
