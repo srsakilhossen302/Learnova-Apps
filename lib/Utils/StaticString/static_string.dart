@@ -44,6 +44,24 @@ class AppString{
   static const String school = "School" ;
   static const String others = "Others" ;
 
+  ///==============>>>>>>>>>> Home Page View <<<<<<<<<<<===============///
+
+  static const String learn = "Learn Through Watching Reels" ;
+  static const String trending = "trending" ;
+  static const String New = "New" ;
+  static const String following = "Following" ;
+  static const String all = "All" ;
+  static const String japan = "中文" ;
+  static const String english = "English" ;
+  static const String maths = "Maths" ;
+  static const String chemistry = "Chemistry" ;
+  static const String vocabulary = "Vocabulary 101" ;
+  static const String jessicaRoy = "Jessica Roy" ;
+  static const String englishListening = "English Listening" ;
+  static const String trigonometryBasic = "Trigonometry Basic" ;
+  static const String geometryAdvance = "Geometry Advance" ;
+
+
 
 
 }
