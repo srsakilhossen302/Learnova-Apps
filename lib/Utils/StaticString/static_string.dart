@@ -55,13 +55,19 @@ class AppString{
   static const String english = "English" ;
   static const String maths = "Maths" ;
   static const String chemistry = "Chemistry" ;
-  static const String vocabulary = "Vocabulary 101" ;
+  static const String vocabulary1 = "Vocabulary 101" ;
   static const String jessicaRoy = "Jessica Roy" ;
   static const String englishListening = "English Listening" ;
   static const String trigonometryBasic = "Trigonometry Basic" ;
   static const String geometryAdvance = "Geometry Advance" ;
 
 
+  ///==============>>>>>>>>>> Search Page View <<<<<<<<<<<===============///
+
+
+  static const String back = "Back" ;
+  static const String trigonometry = "Trigonometry" ;
+  static const String vocabulary = "Vocabulary" ;
 
 
 }
