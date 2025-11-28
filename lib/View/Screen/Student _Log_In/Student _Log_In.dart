@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learnova/Utils/StaticString/static_string.dart';
+import 'package:learnova/View/Screen/Student%20_Log_In/LoginPageController.dart';
+import 'package:learnova/View/Widgegt/CustomButton.dart';
+import 'package:learnova/View/Widgegt/CustomTextField.dart';
 
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
@@ -9,7 +12,15 @@ class LogIn extends StatefulWidget {
 }
 
 class _LogInState extends State<LogIn> {
-  int selected = 0; // 0 = Student, 1 = Teacher
+  final LoginPageController controller = LoginPageController();
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
+  int selected = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -107,6 +118,90 @@ class _LogInState extends State<LogIn> {
               ),
             ],
           ),
+
+          SizedBox(height: 30),
+
+          Padding(
+            padding: const EdgeInsets.only(right: 20, left: 20),
+            child: CustomTextField(
+              label: AppString.email,
+              hint: "johndoe@gmail.com",
+              controller: controller.emailController,
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.only(right: 20, left: 20, top: 8),
+            child: CustomTextField(
+              label: AppString.password,
+              hint: "Enter your password",
+              isPassword: true,
+              controller: controller.passController,
+            ),
+          ),
+
+          SizedBox(height: 20),
+
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(height: 20),
+                GestureDetector(
+                  onTap: (){
+
+
+                  },
+                  child: Text(
+                    AppString.forgotPassword,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                      color: Color(0xff008DE7)
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+
+          CustomButton(
+            onTap: (){
+
+            },
+            width: 390,
+            height: 56,
+            text: AppString.logIn,
+            color:  Color(0xff023F86),
+            textStyle: TextStyle(
+              color: Color(0xffFFFFFF),
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+
+          SizedBox(height: 40),
+
+          CustomButton(
+            onTap: (){
+
+            },
+            width: 390,
+            height: 56,
+            border: Border.all(color: Color(0xff7B828A), width: 1),
+            imagePath: "assets/images/Google.png",
+            text: AppString.loginWithGoogle,
+            color:  Color(0xffFFFFFF),
+            textStyle: TextStyle(
+              color: Color(0xff363636),
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+
+
         ],
       ),
     );
